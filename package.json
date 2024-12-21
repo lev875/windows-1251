@@ -29,9 +29,9 @@
 	"files": [
 		"LICENSE-MIT.txt",
 		"windows-1251.mjs",
-		"windows-1251.d.ts"
+		"windows-1251.d.mts"
 	],
-	"types": "windows-1251.d.ts",
+	"types": "windows-1251.d.mts",
 	"scripts": {
 		"download": "curl https://encoding.spec.whatwg.org/index-windows-1251.txt > data/index.txt",
 		"build": "node scripts/transform-data.js",

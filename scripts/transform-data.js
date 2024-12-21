@@ -72,7 +72,7 @@ const libCode = createLib(require('./export-data.js'));
 fs.writeFileSync('./windows-1251.mjs', libCode);
 
 // src/windows-1251.d.ts → windows-1251.d.ts
-const TYPES_TEMPLATE = fs.readFileSync('./src/windows-1251.d.ts', 'utf8');
+const TYPES_TEMPLATE = fs.readFileSync('./src/windows-1251.d.mts', 'utf8');
 const createTypes = template(TYPES_TEMPLATE, TEMPLATE_OPTIONS);
 const typesCode = createTypes(require('./export-data.js'));
-fs.writeFileSync('./windows-1251.d.ts', typesCode);
+fs.writeFileSync('./windows-1251.d.mts', typesCode);
